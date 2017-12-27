@@ -1,0 +1,17 @@
+﻿<controls:MetroWindow x:Class="Appener.ShellView"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:views="clr-namespace:Appener.Views"
+                      mc:Ignorable="d"
+                      GlowBrush="{DynamicResource AccentColorBrush}"
+                      BorderThickness="2"
+                      controls:IsWindowDraggable="True"
+                      Height="600" Width="600">
+    <DockPanel>
+        <views:TileAdderView VerticalAlignment="Top" DockPanel.Dock="Top"/>
+        <views:MyTilesView />
+    </DockPanel>
+</controls:MetroWindow>
